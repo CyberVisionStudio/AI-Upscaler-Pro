@@ -32,22 +32,3 @@ The project follows the standard Flask architectural pattern:
 └── README.md             # Project documentation
 
 
-⚙️ Local Installation
-To run this project on your local machine, follow these steps:
-
-Clone the repository:
-
-Bash
-
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-Install dependencies:
-
-Bash
-
-pip install -r requirements.txt
-Run the application:
-
-Bash
-
-python app.py
-The app will be available at http://127.0.0.1:5000
