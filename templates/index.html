@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Upscaler Pro | Mike Robart Edition</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">   <style>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <style>
         :root {
             --primary: #8b5cf6;
             --accent: #d946ef;
@@ -19,6 +20,7 @@
             color: #f8fafc;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
+            flex-direction: column; /* Changed to allow footer at bottom */
             align-items: center;
             justify-content: center;
             min-height: 100vh;
@@ -45,7 +47,7 @@
             margin: 0;
             background: linear-gradient(to right, #a78bfa, #f472b6);
             -webkit-background-clip: text;
-            background-clip: text; /* Standard property */
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: -2px;
         }
@@ -151,6 +153,34 @@
             z-index: 10; 
             cursor: pointer; 
         }
+
+        /* GitHub Footer Styling */
+        .github-footer {
+            margin-top: 40px;
+            transition: 0.3s;
+        }
+
+        .github-link {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            background: var(--glass);
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .github-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transform: scale(1.05);
+            border-color: var(--primary);
+        }
     </style>
 </head>
 <body>
@@ -196,12 +226,18 @@
         </div>
     </div>
 
+    <footer class="github-footer">
+        <a href="https://github.com/Mike-Robart" target="_blank" class="github-link">
+            <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+            <span>Developed by <strong>Mike Robart</strong></span>
+        </a>
+    </footer>
+
     <script>
         const fileInput = document.getElementById('fileField');
         const previewImg = document.getElementById('preview-display');
         const placeholder = document.getElementById('upload-placeholder');
 
-        // Instant Image Preview Function
         fileInput.onchange = (e) => {
             const [file] = fileInput.files;
             if (file) {
@@ -211,7 +247,6 @@
             }
         };
 
-        // Form Submission and Processing
         document.getElementById('aiEngineForm').onsubmit = async (e) => {
             e.preventDefault();
             const btn = document.getElementById('actionBtn');
@@ -239,7 +274,4 @@
         };
     </script>
 </body>
-
 </html>
-
-
