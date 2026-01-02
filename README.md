@@ -2,17 +2,17 @@
 
 A professional-grade web application built with **Python Flask** that leverages advanced image processing algorithms to transform low-resolution images into high-fidelity assets. Featuring a modern **Glassmorphism** UI/UX.
 
-!
+---
 
 ## 🚀 Live Demo
-Check out the live application here: [https://ai-upscaler-pro-352p.vercel.app/](https://ai-upscaler-pro-352p.vercel.app/)
+Experience the application live here: [**AI Upscaler Pro - Official Website**](https://ai-upscaler-pro-352p.vercel.app/)
 
 ## ✨ Key Features
 - **AI-Powered Upscaling**: Uses Lanczos resampling and neural-style sharpness filters for crystal clear results.
 - **Multiple Formats**: Export your processed images to **PNG**, **JPG**, or high-quality **SVG** (Vector) containers.
 - **Resolution Control**: Scale your images up to **2x (HD)** or **4x (Ultra 4K)**.
 - **Glassmorphism UI**: A sleek, translucent interface designed for a premium user experience.
-- **Custom Naming**: Automatically renames output files to `ai-upscaler-pro` for professional branding.
+- **Custom Branding**: Automatically renames output files to `ai-upscaler-pro` for a professional touch.
 
 ## 🛠️ Tech Stack
 - **Backend**: Python 3.x, Flask
@@ -21,12 +21,12 @@ Check out the live application here: [https://ai-upscaler-pro-352p.vercel.app/](
 - **Deployment**: Vercel Serverless Functions
 
 ## 📂 Project Structure
-Based on the optimized Flask architecture:
+Based on your optimized Flask architecture:
 ```text
 .
-├── static/               # Contains favicon.png and static assets
-├── templates/            # Contains index.html (UI)
-├── app.py                # Core Flask backend and AI logic
-├── requirements.txt      # Project dependencies
-├── vercel.json           # Vercel deployment configuration
-└── README.md             # Project documentation
+├── static/               # Favicon and brand assets
+├── templates/            # index.html UI
+├── app.py                # Core Flask backend & AI logic
+├── requirements.txt      # Dependencies
+├── vercel.json           # Vercel configuration
+└── README.md             # Documentation
