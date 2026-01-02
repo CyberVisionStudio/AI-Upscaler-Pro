@@ -1,33 +1,32 @@
-# 🚀 AI Upscaler Pro | Mike Robart Edition
+# AI Upscaler Pro | Mike Robart Edition
 
-A professional-grade image enhancement application designed to transform low-resolution images into high-definition assets. This project leverages advanced **Lanczos Resampling** and **Edge-Sharpening Filters** to provide superior clarity and detail.
+A professional-grade web application built with **Python Flask** that leverages advanced image processing algorithms to transform low-resolution images into high-fidelity assets. Featuring a modern **Glassmorphism** UI/UX.
 
----
+!
 
-## 🎨 Design & Experience
-This application features a cutting-edge **Glassmorphism UI**, providing a futuristic and seamless user experience. It's built for speed, aesthetics, and high-quality results.
+## 🚀 Live Demo
+Check out the live application here: [https://ai-upscaler-pro-352p.vercel.app/](https://ai-upscaler-pro-352p.vercel.app/)
 
 ## ✨ Key Features
-* **AI-Powered Upscaling:** Enhances images by 2x or 4x while maintaining sharp details.
-* **Intelligent Detail Engine:** Uses advanced Python filters to reconstruct lost pixels.
-* **Vector Output Support:** Converts standard images into scalable SVG wrappers.
-* **Modern Interface:** Responsive design with real-time image preview and glass-effect aesthetics.
-* **Cloud-Optimized:** Fully configured for serverless deployment on **Vercel**.
+- **AI-Powered Upscaling**: Uses Lanczos resampling and neural-style sharpness filters for crystal clear results.
+- **Multiple Formats**: Export your processed images to **PNG**, **JPG**, or high-quality **SVG** (Vector) containers.
+- **Resolution Control**: Scale your images up to **2x (HD)** or **4x (Ultra 4K)**.
+- **Glassmorphism UI**: A sleek, translucent interface designed for a premium user experience.
+- **Custom Naming**: Automatically renames output files to `ai-upscaler-pro` for professional branding.
+
+## 🛠️ Tech Stack
+- **Backend**: Python 3.x, Flask
+- **Image Processing**: Pillow (PIL)
+- **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript (Async/Await)
+- **Deployment**: Vercel Serverless Functions
 
 ## 📂 Project Structure
-As organized in this repository:
-* **`app.py`**: The core AI logic and Flask server.
-* **`templates/`**: Contains the futuristic frontend code.
-* **`vercel.json`**: Configuration for cloud deployment.
-* **`requirements.txt`**: List of Python dependencies (Flask, Pillow).
-
-## 🚀 Quick Start
-
-### 🌐 Live Deployment
-This project is **Cloud-Ready**. Simply connect this GitHub repository to your **Vercel** account, and it will deploy automatically using the provided configuration.
-
-### 💻 Local Installation
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/CyberVisionStudio/AI-Upscaler-Pro.git](https://github.com/CyberVisionStudio/AI-Upscaler-Pro.git)
-   cd AI-Upscaler-Pro
+Based on the optimized Flask architecture:
+```text
+.
+├── static/               # Contains favicon.png and static assets
+├── templates/            # Contains index.html (UI)
+├── app.py                # Core Flask backend and AI logic
+├── requirements.txt      # Project dependencies
+├── vercel.json           # Vercel deployment configuration
+└── README.md             # Project documentation
