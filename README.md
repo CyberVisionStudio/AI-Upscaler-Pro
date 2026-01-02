@@ -22,6 +22,9 @@ Experience the application live here: [**AI Upscaler Pro - Official Website**](h
 
 ## 📂 Project Structure
 The project follows the standard Flask architectural pattern:
+## 📂 Project Structure
+The project follows the standard Flask architectural pattern:
+
 ```text
 .
 ├── static/               # Favicon and brand assets
@@ -30,7 +33,7 @@ The project follows the standard Flask architectural pattern:
 ├── requirements.txt      # Project dependencies
 ├── vercel.json           # Vercel deployment configuration
 └── README.md             # Project documentation
-\`\`\`
+
 
 
 1. Clone the repository
