@@ -9,7 +9,7 @@ Experience the application live here: [**AI Upscaler Pro - Official Website**](h
 
 ## ✨ Key Features
 - **AI-Powered Upscaling**: Uses Lanczos resampling and neural-style sharpness filters for crystal clear results.
-- **Multiple Formats**: Export your processed images to **PNG**, **JPG**, or high-quality **SVG** (Vector) containers.
+- **Multiple Formats**: Export processed images to **PNG**, **JPG**, or high-quality **SVG** (Vector) containers.
 - **Resolution Control**: Scale your images up to **2x (HD)** or **4x (Ultra 4K)**.
 - **Glassmorphism UI**: A sleek, translucent interface designed for a premium user experience.
 - **Custom Branding**: Automatically renames output files to `ai-upscaler-pro` for a professional touch.
@@ -17,16 +17,37 @@ Experience the application live here: [**AI Upscaler Pro - Official Website**](h
 ## 🛠️ Tech Stack
 - **Backend**: Python 3.x, Flask
 - **Image Processing**: Pillow (PIL)
-- **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript (Async/Await)
+- **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript
 - **Deployment**: Vercel Serverless Functions
 
 ## 📂 Project Structure
-Based on your optimized Flask architecture:
+The project follows the standard Flask architectural pattern:
 ```text
 .
 ├── static/               # Favicon and brand assets
-├── templates/            # index.html UI
+├── templates/            # index.html (Frontend Interface)
 ├── app.py                # Core Flask backend & AI logic
-├── requirements.txt      # Dependencies
-├── vercel.json           # Vercel configuration
-└── README.md             # Documentation
+├── requirements.txt      # Project dependencies
+├── vercel.json           # Vercel deployment configuration
+└── README.md             # Project documentation
+
+
+⚙️ Local Installation
+To run this project on your local machine, follow these steps:
+
+Clone the repository:
+
+Bash
+
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+Install dependencies:
+
+Bash
+
+pip install -r requirements.txt
+Run the application:
+
+Bash
+
+python app.py
+The app will be available at http://127.0.0.1:5000
