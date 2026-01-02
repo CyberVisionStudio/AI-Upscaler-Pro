@@ -1,32 +1,33 @@
 # 🚀 AI Upscaler Pro | Mike Robart Edition
 
-A professional-grade image enhancement tool designed for high-performance resolution scaling. This application leverages advanced **Lanczos Resampling** and **Neural-Style Filters** to transform low-resolution images into high-definition assets.
+A professional-grade image enhancement application designed to transform low-resolution images into high-definition assets. This project leverages advanced **Lanczos Resampling** and **Edge-Sharpening Filters** to provide superior clarity and detail.
 
 ---
 
-## 🎨 Design Philosophy
-This project features a cutting-edge **Glassmorphism UI**, offering a seamless and futuristic user experience. It's not just about functionality; it's about aesthetic precision.
+## 🎨 Design & Experience
+This application features a cutting-edge **Glassmorphism UI**, providing a futuristic and seamless user experience. It's built for speed, aesthetics, and high-quality results.
 
-## 🛠️ Core Capabilities
-* **Intelligent Scaling:** Enhances images by 2x or 4x while preserving edge sharpness.
-* **Advanced Filters:** Applies automated detail enhancement and contrast correction.
-* **Vector Output:** Converts standard raster images into high-quality SVG wrappers for scalable usage.
-* **Cloud-Optimized Architecture:** Specifically engineered to run in serverless environments like **Vercel**.
+## ✨ Key Features
+* **AI-Powered Upscaling:** Enhances images by 2x or 4x while maintaining sharp details.
+* **Intelligent Detail Engine:** Uses advanced Python filters to reconstruct lost pixels.
+* **Vector Output Support:** Converts standard images into scalable SVG wrappers.
+* **Modern Interface:** Responsive design with real-time image preview and glass-effect aesthetics.
+* **Cloud-Optimized:** Fully configured for serverless deployment on **Vercel**.
 
 ## 📂 Project Structure
-As seen in the repository:
-* `app.py`: The central AI processing engine.
-* `templates/`: Contains the futuristic Glassmorphism frontend.
-* `vercel.json`: Configuration for seamless cloud deployment.
-* `requirements.txt`: Manages all Python dependencies (Flask, Pillow).
+As organized in this repository:
+* **`app.py`**: The core AI logic and Flask server.
+* **`templates/`**: Contains the futuristic frontend code.
+* **`vercel.json`**: Configuration for cloud deployment.
+* **`requirements.txt`**: List of Python dependencies (Flask, Pillow).
 
 ## 🚀 Quick Start
 
-### Deployment (Recommended)
-This project is **Cloud-Ready**. Simply connect this GitHub repo to **Vercel**, and it will deploy automatically using the `vercel.json` configuration.
+### 🌐 Live Deployment
+This project is **Cloud-Ready**. Simply connect this GitHub repository to your **Vercel** account, and it will deploy automatically using the provided configuration.
 
-### Local Installation
-1. **Clone & Enter:**
+### 💻 Local Installation
+1. **Clone the repository:**
    ```bash
    git clone [https://github.com/CyberVisionStudio/AI-Upscaler-Pro.git](https://github.com/CyberVisionStudio/AI-Upscaler-Pro.git)
    cd AI-Upscaler-Pro
