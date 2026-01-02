@@ -33,7 +33,8 @@ The project follows the standard Flask architectural pattern:
 ├── requirements.txt      # Project dependencies
 ├── vercel.json           # Vercel deployment configuration
 └── README.md             # Project documentation
-
+```
+ذذذ``
 
 
 1. Clone the repository
