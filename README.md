@@ -33,7 +33,6 @@ The project follows the standard Flask architectural pattern:
 
 
 
-### 1. Clone the repository
-```bash
+1. Clone the repository
 git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 
