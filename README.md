@@ -32,3 +32,8 @@ The project follows the standard Flask architectural pattern:
 └── README.md             # Project documentation
 
 
+
+### 1. Clone the repository
+```bash
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+
