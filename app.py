@@ -10,14 +10,14 @@ from PIL import Image, ImageEnhance, ImageFilter
 # ---------------------------------------------------------
 app = Flask(__name__)
 
-# Essential for Vercel: Define the app as a global variable
+# Required for Vercel deployment: Map the app instance
 app = app 
 
-# Configure logging for production tracking
+# Configure logging for production environment tracking
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Vercel's writable directory is strictly '/tmp'
+# Vercel writeable directory is restricted to '/tmp'
 UPLOAD_FOLDER = '/tmp'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024  # 32MB Upload Limit
@@ -54,16 +54,16 @@ def enhance_image_resolution(input_path, output_path, scale, output_format):
         with Image.open(input_path) as img:
             img = img.convert("RGBA")
             
-            # Step 1: High-fidelity resizing
+            # Step 1: High-fidelity resizing using Lanczos resampling
             new_dimensions = (int(img.width * scale), int(img.height * scale))
             img = img.resize(new_dimensions, Image.Resampling.LANCZOS)
             
-            # Step 2: Advanced filters for sharpness and clarity
+            # Step 2: Apply advanced sharpness and detail filters
             img = img.filter(ImageFilter.DETAIL)
             sharp_enhancer = ImageEnhance.Sharpness(img)
             img = sharp_enhancer.enhance(2.1)
             
-            # Step 3: Final Export based on user choice
+            # Step 3: Final Export based on selected format
             if output_format == "svg":
                 temp_path = output_path.replace(".svg", "_temp.png")
                 img.save(temp_path, "PNG")
@@ -82,12 +82,12 @@ def enhance_image_resolution(input_path, output_path, scale, output_format):
 # ---------------------------------------------------------
 @app.route('/')
 def index():
-    """Renders the main Glassmorphism interface."""
+    """Renders the main application interface."""
     return render_template('index.html')
 
 @app.route('/process_request', methods=['POST'])
 def handle_api():
-    """Handles image uploads and triggers the AI engine."""
+    """Handles incoming image uploads and triggers the AI engine."""
     if 'image' not in request.files:
         return jsonify({"error": "No image file provided"}), 400
     
@@ -98,7 +98,7 @@ def handle_api():
     if file.filename == '':
         return jsonify({"error": "Selected file is empty"}), 400
 
-    # Generate unique identifiers
+    # Generate unique identifiers for secure file handling
     request_id = str(uuid.uuid4())[:12]
     original_ext = file.filename.rsplit('.', 1)[-1].lower() if '.' in file.filename else 'png'
     
@@ -108,7 +108,7 @@ def handle_api():
     
     file.save(source_p)
     
-    # Execute AI Enhancement
+    # Execute Enhancement Engine
     if enhance_image_resolution(source_p, result_p, scale, file_format):
         return jsonify({
             "success": True, 
@@ -119,9 +119,18 @@ def handle_api():
 
 @app.route('/get_file/<filename>')
 def get_file(filename):
-    """Serves the final processed file from the /tmp directory."""
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+    """Serves the final file with the professional custom name."""
+    # Extract extension (png, jpg, or svg)
+    ext = filename.split('.')[-1]
+    
+    # Send file with the requested 'ai-upscaler-pro' naming convention
+    return send_from_directory(
+        app.config['UPLOAD_FOLDER'], 
+        filename, 
+        as_attachment=True,
+        download_name=f"ai-upscaler-pro.{ext}"
+    )
 
 if __name__ == '__main__':
-    # Local development server
+    # Local development server entry point
     app.run(host='127.0.0.1', port=5000, debug=True)
