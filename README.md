@@ -8,23 +8,19 @@ A professional-grade web application built with **Python Flask** that leverages 
 Experience the application live here: [**AI Upscaler Pro - Official Website**](https://ai-upscaler-pro-352p.vercel.app/)
 
 ## ✨ Key Features
-- **AI-Powered Upscaling**: Uses Lanczos resampling and neural-style sharpness filters for crystal clear results.
-- **Multiple Formats**: Export processed images to **PNG**, **JPG**, or high-quality **SVG** (Vector) containers.
-- **Resolution Control**: Scale your images up to **2x (HD)** or **4x (Ultra 4K)**.
-- **Glassmorphism UI**: A sleek, translucent interface designed for a premium user experience.
-- **Custom Branding**: Automatically renames output files to `ai-upscaler-pro` for a professional touch.
+- **AI-Powered Upscaling**: Uses Lanczos resampling and neural-style sharpness filters.
+- **Multiple Formats**: Export processed images to **PNG**, **JPG**, or **SVG**.
+- **Resolution Control**: Scale images up to **2x (HD)** or **4x (Ultra 4K)**.
+- **Glassmorphism UI**: A sleek, translucent interface for a premium experience.
+- **Custom Branding**: Output files are named `ai-upscaler-pro` automatically.
 
 ## 🛠️ Tech Stack
 - **Backend**: Python 3.x, Flask
 - **Image Processing**: Pillow (PIL)
 - **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript
-- **Deployment**: Vercel Serverless Functions
+- **Deployment**: Vercel
 
 ## 📂 Project Structure
-The project follows the standard Flask architectural pattern:
-## 📂 Project Structure
-The project follows the standard Flask architectural pattern:
-
 ```text
 .
 ├── static/               # Favicon and brand assets
@@ -33,19 +29,3 @@ The project follows the standard Flask architectural pattern:
 ├── requirements.txt      # Project dependencies
 ├── vercel.json           # Vercel deployment configuration
 └── README.md             # Project documentation
-```
-⚙️ Local Installation
-To run this project on your local machine, follow these steps:
-
-1-Clone the repository:
-```
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-```
-2-Install dependencies:
-```
-pip install -r requirements.txt
-```
-3-Run the application:
-```
-python app.py
-```
