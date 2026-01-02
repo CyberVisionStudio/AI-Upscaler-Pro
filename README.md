@@ -34,6 +34,18 @@ The project follows the standard Flask architectural pattern:
 ├── vercel.json           # Vercel deployment configuration
 └── README.md             # Project documentation
 ```
-1. Clone the repository
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+⚙️ Local Installation
+To run this project on your local machine, follow these steps:
 
+1-Clone the repository:
+```
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+```
+2-Install dependencies:
+```
+pip install -r requirements.txt
+```
+3-Run the application:
+```
+python app.py
+```
