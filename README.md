@@ -34,9 +34,6 @@ The project follows the standard Flask architectural pattern:
 ├── vercel.json           # Vercel deployment configuration
 └── README.md             # Project documentation
 ```
-ذذذ``
-
-
 1. Clone the repository
 git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 
