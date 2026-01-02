@@ -5,7 +5,7 @@ A professional-grade web application built with **Python Flask** that leverages 
 ---
 
 ## 🚀 Live Demo
-Experience the application live here: [**AI Upscaler Pro - Official Website**](https://ai-upscaler-pro-352p.vercel.app/)
+Experience the application live here: [**AI Upscaler Pro - Official Website**](https://ai-upscaler-pro.vercel.app/)
 
 ## ✨ Key Features
 - **AI-Powered Upscaling**: Uses Lanczos resampling and neural-style sharpness filters.
